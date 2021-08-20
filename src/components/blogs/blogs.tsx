@@ -13,7 +13,7 @@ interface IState {
   blogLists?: IBlog[] | any,
   isLoaded: boolean,
 };
-export class Blogs extends React.Component<IProps, IState> {
+class Blogs extends React.Component<IProps, IState> {
   
   constructor(props: IProps) {
     super(props)
@@ -384,3 +384,5 @@ export class Blogs extends React.Component<IProps, IState> {
     );
   }
 }
+
+export default Blogs

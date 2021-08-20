@@ -1,11 +1,10 @@
 import { BlogCreate } from './components/blogs/blog-create';
 import { BlogDetails } from './components/blogs/blog-details';
 import { BlogGrid } from './components/blogs/blog-grid';
-import { Blogs } from './components/blogs/blogs';
+import Blogs from './components/blogs/blogs';
 import { Dashboard } from './components/dashboard/dashboard';
-import { EmployeeCreate } from './components/employee/employee-create';
-import { EmployeeList } from './components/employee/employee-list';
 
+import EmployeeList from './components/employee/employee-list';
 export const Routes = [
     {
         path:"/",
@@ -45,14 +44,6 @@ export const Routes = [
         path:"/employee",
         component: EmployeeList,
     },
-    {
-        path:"/employee/create",
-        component: EmployeeCreate,
-        
-    },
-    {
-        path:"/employee/list",
-        component: EmployeeList,
-        
-    }
+    
+   
 ]
